@@ -1,0 +1,125 @@
+html, body, ul, li, a, nav, h1{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+* {
+  transition: 0.2s;
+}
+
+a {
+  display: block;
+}
+
+.grandparent {
+  width: 500px;
+  height: 500px;
+  background-color: #88f;
+}
+
+.parent {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 250px;
+  height: 250px;
+  background-color: #f2e;
+}
+
+.child {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+
+  width: 125px;
+  height: 125px;
+  background-color: #000;
+}
+
+.fancy-header {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: green;
+}
+
+.logo {
+  float: left;
+  background-color: red;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.header-nav-thing {
+  float: right;
+}
+.link-container {
+  float: left;
+}
+
+.header-link {
+  background-color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 5px;
+  height: 60px;
+}
+
+.middle-thing {
+  margin-top: 60px;
+}
+
+.grid-element {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  float: left;
+  background-color: #ffaade;
+}
+
+.grid-element-guts {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  background-color: #f88;
+}
+
+.grid-element:hover .grid-element-guts {
+  width: 60%;
+  height: 60%;
+
+  margin: 20%;
+  background-color: #88f;
+}
+
+.grid-element.clicked .grid-element-guts {
+  width: 80%;
+  height: 80%;
+
+  margin: 10%;
+  background-color: #8ff;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.offset {
+  margin-left: 25px;
+}
