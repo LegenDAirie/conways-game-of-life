@@ -12,7 +12,7 @@
     for (var rowIndex = 0; rowIndex < NUMBER_OF_ROWS; rowIndex++) {
       stateMatrix[rowIndex] = [];
       for (var columnIndex = 0; columnIndex < NUMBER_OF_COLUMNS; columnIndex++) {
-        stateMatrix[rowIndex][columnIndex] = false;
+        stateMatrix[rowIndex][columnIndex] = Math.random() >= 0.5;
       };
     }
 
