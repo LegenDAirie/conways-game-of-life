@@ -98,6 +98,10 @@ a {
   background-color: #f88;
 }
 
+.turned-on {
+  background-color: red;
+}
+
 .grid-element:hover .grid-element-guts {
   width: 60%;
   height: 60%;

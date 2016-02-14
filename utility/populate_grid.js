@@ -19,10 +19,12 @@
       return row;
     };
 
-    var makeGridElement = function() {
+    var makeGridElement = function(rowIndex, columnIndex) {
       var gridElement = document.createElement('li');
 
       gridElement.classList.add('grid-element');
+      gridElement.classList.add('row' + rowIndex);
+      gridElement.classList.add('column' + columnIndex);
 
       return gridElement;
     };
@@ -31,7 +33,7 @@
       var row = makeRow();
 
       for (var columnIndex = 0; columnIndex < NUMBER_OF_COLUMNS; columnIndex++) {
-        var gridElement = makeGridElement();
+        var gridElement = makeGridElement(rowIndex, columnIndex);
 
         row.appendChild(gridElement);
       };
