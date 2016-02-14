@@ -1,18 +1,22 @@
-'use strict'
+'use strict';
 
-var GAME_PROTOTYPE = {
-  start: function () {
-    console.log("bad words")
-  },
+(function () {
+  var GOL = window.GOL = window.GOL || {};
 
-  tick: function () {
+  var GAME_PROTOTYPE = {
+    start: function () {
+      console.log("bad words")
+    },
+
+    tick: function () {
+    }
   }
-}
 
-var Game = {
-  create: function () {
-    game = Object.create(GAME_PROTOTYPE);
+  GOL.Game = {
+    create: function () {
+      var game = Object.create(GAME_PROTOTYPE);
 
-    return game
+      return game
+    }
   }
-}
+})()
